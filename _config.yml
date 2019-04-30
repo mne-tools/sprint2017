@@ -1,0 +1,85 @@
+# ----
+# Site
+
+title: Supervised Neural Time Series
+url: "https://mne-tools.github.io/mne-events/sprint2017/"
+baseurl:
+google_analytics_key:
+google_maps_javascript_api_key: AIzaSyB1INhm89YSR9BPKhfq4DBCQ7wXlZ55BgA
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: Coding Sprint.
+author:
+  name:
+  email:
+  twitter:
+social:
+  name: Supervised Neural Time Series
+  links:
+    - https://mne-tools.github.io/mne-events/sprint2017/
+
+# -----
+# Build
+highlighter: rouge
+
+permalink: pretty
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-archives
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+collections:
+  staff_members:
+    _hide_content: true
+
+paginate: 10
+paginate_path: "/blog/:num/"
+
+jekyll-archives:
+  enabled: ['categories']
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "contact-success.html"
+    values:
+      layout: "page"
+
+# -----------
+# CloudCannon
+
+social_icons:
+  - Facebook
+  - Google Plus
+  - Instagram
+  - LinkedIn
+  - Pinterest
+  - Tumblr
+  - Twitter
+  - YouTube
+  - Email
+  - RSS
+
+_comments:
+  description: Coding sprint supervised neural time series
+  blurb: Coding sprint supervised neural time series
